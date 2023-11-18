@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+    <title>Ma Page Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="row mb-3">
+                
+                <a class="navbar-brand " href="index.html"><img src="logo.png" alt="logo" id="logo" width="200" height="150"></a>
+                
+                
+                
+                <nav class="navbar navbar-expand ml-auto">
+                    <ul class="navbar-nav lienNav" id="navBar">
+                        <li class="nav-item"><a class="nav-link " href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link " id="loginLink" href="#">Se connecter</a></li>
+                        <li class="nav-item"><a class="nav-link " id="logoutLink" href="#" style="display: none;">Se déconnecter</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="input-group">
+                        <div class="input-group-append">                      
+                            <input type="text" class="form-control" id="searchInput" placeholder="Entrez un nom de vin">
+                            <button id="searchButton" class="btn btn-dark" >Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-2">
+                    <div class="form-inline" >
+                        <select class="form-control" id="countryDrop">
+                            <option value="country">Pays</option>
+                        </select>
+                        <select class="form-control ml-3" id ="dateDrop">
+                            <option value="date">Date</option>
+                        </select>
+                        <button id="filtreButton"class="btn btn-dark ml-3">Filtrer</button>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="row">
+                <div id="liste" class="col-md-4"></div>
+            
+                <div class="col-md-7">
+                    <div id="infoContainer" class="mb-4">
+                        <h1 class="text-center">Bienvenue chez Wine Wine West</h1>
+                        <div class="para">
+                            <p>
+                                Bienvenue chez Wine Wine West - L'Artisan du Vin Qui a Soif de Découverte 
+                                Chez [Nom de votre Caviste], nous célébrons la passion du vin sous toutes ses formes. 
+                                Notre histoire est celle d'un caviste qui, comme vous, a soif de connaissances et de découvertes 
+                                en matière de vin. Notre amour pour le vin nous pousse à rechercher les perles rares, les saveurs 
+                                uniques et les terroirs fascinants qui rendent chaque bouteille spéciale.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="infoContainer2"></div>
+                </div>
+            
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Placez la pseudo-classe derrière le contenu réel */
+    background-image: url('pics/fond-decran.jpg'); /* Remplacez par le chemin de votre image de fond */
+    background-size: cover;
+    opacity: 0.6; /* Opacité de l'image de fond à 50% */
+}
+
+.title {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+}
+a {
+    color : black;
+    font-size: large;
+}
+
+.listStyle {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.listStyle:hover {
+    /* color: white; */
+    background-color: white;
+    cursor: pointer;
+}
+
+#countryDrop, #dateDrop  {
+    width: 120px;
+}
+.para {
+    color: black;
+    font-size: large;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 35px;
+    border-radius: 20px;
+}
+.containerInf {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding : 50px;
+    border-radius: 20px;
+}
+#cercle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background: black;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
